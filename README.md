@@ -10,7 +10,7 @@ Rank façade design alternatives with interactive AHP logic using data from Goog
 
 * [Why this exists](#-why-this-exists)
 * [Process Overview](#-process-overview)
-* [How it works (TL;DR)](#-how-it-works-tldr)
+* [How it works ](#-how-it-works-)
 * [Repository Layout](#-repository-layout)
 * [Quick Start](#-quick-start)
 * [Detailed Workflow](#-detailed-workflow)
