@@ -87,6 +87,8 @@ streamlit run app/facade_ahp.py
 Debug tip: If images don't load, check that your `images/` folder has the right filenames matching `Alternative`.
 
 ---
+🧽 Workflow Diagram
+![Asset 8 (2)](https://github.com/user-attachments/assets/4a09c656-f7b3-43c1-800e-30033cf3c3cf)
 
 ## 🛠 Implementation Decisions
 
