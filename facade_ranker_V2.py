@@ -151,9 +151,15 @@ for crit, subs in criteria_groups.items():
     st.sidebar.markdown(f"**{crit}**")
     for sub in subs:
         key = f"sub_weight_{sub}"
-        if key not in st.session_state:
-            st.session_state[key] = 0.3
-        sub_weights[sub] = st.sidebar.slider(sub, 0.01, 1.0, st.session_state[key], 0.01, key=key)
+        default_val = 0.3
+sub_weights[sub] = st.sidebar.slider(
+    sub,
+    min_value=0.01,
+    max_value=1.0,
+    value=st.session_state.get(key, default_val),
+    step=0.01,
+    key=key)
+
 
 # --- Build AHP Tree
 sub_nodes = {}
