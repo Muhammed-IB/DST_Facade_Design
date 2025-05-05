@@ -103,7 +103,6 @@ Debug tip: If images don't load, check that your `images/` folder has the right 
 
 ### Known Limitations
 
-* Sliders assume consistent data across Google Sheets.
 * No error handling for invalid/missing image files.
 * One AHP tree per run (no multiple stakeholder support yet).
 
