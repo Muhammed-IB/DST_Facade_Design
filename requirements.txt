@@ -2,5 +2,4 @@ streamlit
 pandas
 ahpy
 plotly.graph_objects
-streamlit.components.v1 
-hashlib
+streamlit.components.v1
