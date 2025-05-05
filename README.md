@@ -2,7 +2,7 @@
 
 Rank façade design alternatives with interactive AHP logic using data from Google Sheets and visualize results with Streamlit.
 
-**Technologies:** Python · Streamlit · Plotly · AHPy
+**Applied using:** Python · Streamlit · Plotly · AHPy
 
 ---
 
