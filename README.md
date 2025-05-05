@@ -36,7 +36,7 @@ This tool supports early-stage decision making in façade design by ranking alte
 
 ---
 
-## ⚙️ How it works (TL;DR)
+## ⚙️ How it works
 
 * Sub-criteria are grouped under three top-level categories.
 * Data is normalized and pairwise comparisons are calculated.
