@@ -1,6 +1,10 @@
 # 🧲 AHP Façade Ranking Tool
 
 Rank façade design alternatives with interactive AHP logic using data from Google Sheets and visualize results with Streamlit.
+It a two-part decision-support framework to integrate parametric design, multi-objective optimization and multi-criteria decision making for façade design alternatives. The framework employs an evolutionary optimization algorithm (NSGA-II) with the Analytic Hierarchy Process (AHP) in an interactive, browser-based application developed using Streamlit. The tool allows stakeholders to explore trade-offs among competing performance criteria and to dynamically assign weights to reflect project-specific priorities. 
+Due to the absence of a single comprehensive dataset that includes both detailed performance metrics and the corresponding design parameters, the tool was implemented in two separate demos.
+This is demo 2 
+It focuses on alternatives with rich performance data including embodied carbon, heating and cooling loads, material cost, thermal resistance, and acoustic insulation. However, it lacks input parameter data and includes only five alternatives, which are insufficient for conducting sensitivity analysis. This dataset contains only five alternatives. Demo 1 is important during the early stages of the design process
 
 **Applied using:** Python · Streamlit · Plotly · AHPy
 
