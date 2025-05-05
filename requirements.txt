@@ -1,6 +1,5 @@
 streamlit 
 pandas
-os
 ahpy
 plotly.graph_objects
 streamlit.components.v1 
