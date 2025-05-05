@@ -2,4 +2,4 @@ streamlit
 pandas
 ahpy
 plotly
-
+numpy<2.0
