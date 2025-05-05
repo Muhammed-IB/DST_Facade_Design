@@ -151,29 +151,15 @@ for crit, subs in criteria_groups.items():
     st.sidebar.markdown(f"**{crit}**")
     for sub in subs:
         key = f"sub_weight_{sub}"
-        default_val = 0.3
-sub_weights[sub] = st.sidebar.slider(
-    sub,
-    min_value=0.01,
-    max_value=1.0,
-    value=st.session_state.get(key, default_val),
-    step=0.01,
-    key=key)
-
+        if key not in st.session_state:
+            st.session_state[key] = 0.3
+        sub_weights[sub] = st.sidebar.slider(sub, 0.01, 1.0, st.session_state[key], 0.01, key=key)
 
 # --- Build AHP Tree
 sub_nodes = {}
 for sub, col in sub_map.items():
     scores = df[col].tolist()
-    pairwise_input = create_pairwise(scores, alt_names)
-
-# Validate: all values must be positive numbers
-if not all(isinstance(v, (int, float)) and v > 0 for v in pairwise_input.values()):
-    st.error(f"❌ Invalid AHP weights for '{sub}'. Please check input values. Some might be zero or missing.")
-    st.stop()
-
-sub_nodes[sub] = ahpy.Compare(sub, pairwise_input, precision=4)
-
+    sub_nodes[sub] = ahpy.Compare(sub, create_pairwise(scores, alt_names), precision=4)
 
 group_nodes = {}
 for crit, subs in criteria_groups.items():
