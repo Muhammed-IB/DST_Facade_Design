@@ -1,5 +1,5 @@
-streamlit 
+streamlit
 pandas
 ahpy
-plotly.graph_objects
-streamlit.components.v1
+plotly
+
